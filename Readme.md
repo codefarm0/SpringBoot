@@ -6,7 +6,8 @@
 * Java installed
 * IDE - InteliJ/eclipse/STS
 ### First spring boot application
-* Watch here - https://www.youtube.com/watch?v=sRnafhW11U0
+* Spring Boot with Java - https://www.youtube.com/watch?v=sRnafhW11U0
+* Spring Boot with Groovy - https://youtu.be/cCsR8KiL_io 
 ### What is autoconfiguration?
 ### How dependency injection happens in Spring boot?
 ### More about @SpringBootAPplication annotation
