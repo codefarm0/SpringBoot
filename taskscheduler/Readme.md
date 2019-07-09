@@ -12,7 +12,7 @@ An annotation that marks a method to be scheduled. Exactly one of the below attr
 		fixedDelay(),
 		fixedRate(),
 		initDelay(),
-		cron(),
+		cron(),  -> http://www.cronmaker.com/
 		fixedDelayString(),
 		fixedRateString(),
 		initDelayString()
@@ -45,3 +45,5 @@ Enables Spring's asynchronous method execution capability.
 * https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/scheduling/annotation/Scheduled.html
 * https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/annotation/Async.html
 * https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/scheduling/annotation/EnableAsync.html
+* https://www.freeformatter.com/cron-expression-generator-quartz.html
+* https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm
