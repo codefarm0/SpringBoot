@@ -8,6 +8,7 @@ Here, we are going to see the details and application of below annotations
 
 ## @Scheduled
 An annotation that marks a method to be scheduled. Exactly one of the below attributes must be specified.
+
         fixedDelay(),
         fixedRate(),
 		initDelay(),
@@ -15,7 +16,9 @@ An annotation that marks a method to be scheduled. Exactly one of the below attr
 		fixedDelayString(),
         fixedRateString(),
 		initDelayString()
+		
 Some condtions/rules for method that is annotated @Scheduled
+
 * No arguments, otherwise system will throw an exception
 * No return type, if not then return type will be ignored
 
