@@ -1,74 +1,52 @@
 package com.gl.springdata.model;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.UUID;
 
+
+@Setter
+@Getter
+//@NoArgsConstructor
+@ToString
+
 @Entity
-@Table(name="author")
-public class Author {
+@Table(name = "Author")
+@EntityListeners(AuditingEntityListener.class)
+public class Author implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
+    @Column(name = "eval")
     private boolean eval;
+    @Column(name = "value")
     private String value;
+    @Column(name = "url")
     private String url;
+    @Column(name = "additionalInfo")
     private String additionalInfo;
+    @Column(name = "description")
     private String description;
+    @Column(name = "published")
     private String published;
 
-    public UUID getId() {
-        return id;
+
+    public Author() {
+        super();
     }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public boolean isEval() {
-        return eval;
-    }
-
-    public void setEval(boolean eval) {
+    public Author(boolean eval, String value, String url, String additionalInfo, String description, String published) {
         this.eval = eval;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
         this.value = value;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
         this.url = url;
-    }
-
-    public String getAdditionalInfo() {
-        return additionalInfo;
-    }
-
-    public void setAdditionalInfo(String additionalInfo) {
         this.additionalInfo = additionalInfo;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getPublished() {
-        return published;
-    }
-
-    public void setPublished(String published) {
         this.published = published;
     }
 }
