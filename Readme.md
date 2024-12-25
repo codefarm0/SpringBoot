@@ -1,4 +1,3 @@
-
 ### What is spring boot?
 * Makes easy to create standlaone applications
 
@@ -24,3 +23,11 @@
 	* Known Limitations
 * Live reload
 * Global settings
+
+### Event Listener Use cases
+
+https://medium.com/@arvind4gl/detailed-explanation-of-eventlistener-b3d6796780ac
+
+### Load Test Using K6.io
+
+### Customizing Spring Boot Auto-Configuration
